@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-cmn-Hans-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>LCSTS自动摘要数据集_数据集-飞桨AI Studio星河社区</title>
+    <meta name="keywords" content="数据集, 数据分享平台, 飞桨开放数据集, 飞桨星河社区, 自然语言处理">
+    <meta name="description" content="lcsts摘要数据是哈尔滨工业大学整理，基于新闻媒体在微博上发布的新闻摘要创建了该数据集，每篇短文约100个字符，每篇摘要约20个字符。数据来源：https://github.com/liucongg/GPT2-NewsTitle">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" charset="UTF-8">
+    <link rel="icon" href="https://paddlepaddle-org-cn.cdn.bcebos.com/paddle-site-front/favicon-48.png" sizes="48x48">
+    <link rel="icon" href="https://paddlepaddle-org-cn.cdn.bcebos.com/paddle-site-front/favicon-64.png" sizes="64x64">
+    <link rel="icon" href="https://paddlepaddle-org-cn.cdn.bcebos.com/paddle-site-front/favicon-128.png" sizes="128x128">
+    <script src="https://passport.baidu.com/passApi/js/uni_wrapper.js"></script>
+    <script src="https://hm.baidu.com/hm.js?be6b0f3e9ab579df8f47db4641a0a406"></script>
+    <link rel="shortcut icon" href="//aistudio-fe-online.cdn.bcebos.com/aistudio/dist/1739772847621/favicon-32.ico">
+    <script type="text/javascript"
+            charset="utf-8"
+            crossorigin="anonymous"
+            src="https://jsdk.baidu.com/jshunter/monitor"></script>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        .paddle-logo {
+            position: absolute;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        .main {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <style>
+         @keyframes initialDotFlashing {
+            0% {
+                background-color: #4861ff;
+            }
+            50%, 100% {
+                background-color: #7d8cfa;
+            }
+        }
+        .initial-loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        .initial-loading-inner {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #4861ff;
+            color: #4861ff;
+            animation: initialDotFlashing 1s infinite linear alternate;
+            animation-delay: .5s;
+        }
+        .initial-loading-inner::before, .initial-loading-inner::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+        }
+        .initial-loading-inner::before {
+            left: -15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #4861ff;
+            color: #4861ff;
+            animation: initialDotFlashing 1s infinite alternate;
+            animation-delay: 0;
+        }
+        .initial-loading-inner::after {
+            left: 15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #4861ff;
+            color: #4861ff;
+            animation: initialDotFlashing 1s infinite alternate;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="paddle-logo"><img src="https://paddlepaddle-org-cn.cdn.bcebos.com/paddle-site-front/static/media/paddlelogo.0b483fa7.png"></div>
+    <div id="main" class="main">
+        <div class="initial-loading">
+            <div class="initial-loading-inner">
+            </div>
+        </div>
+    </div>
+    <div style="display:none;"></div>
+    <script>
+        window.aiStudio = {
+            siteId: 0,
+            pageTitle: "LCSTS\u81EA\u52A8\u6458\u8981\u6570\u636E\u96C6_\u6570\u636E\u96C6-\u98DE\u6868AI Studio\u661F\u6CB3\u793E\u533A",
+            userInfo: "{}",
+            logoutUrl: null,
+            bdToken: null,
+            oldVersion: false,
+            newVersionDisabled: false,
+            publicPath: '//aistudio-fe-online.cdn.bcebos.com',
+            passport: null
+        };
+    </script>
+    <script>
+        var scripts = [
+            "<script type='text/javascript' src='//aistudio.baidu.com/front-js-version.js'><\/script>",
+            "<script type='text/javascript' src='//aistudio.baidu.com/front-js-version-old.js'><\/script>"
+        ]
+        document.write(scripts.join(''));
+    </script>
+<script>
+    try {
+        var asUserInfo = window.aiStudio.userInfo || '';
+        var asUid = typeof userInfo === 'string' ? JSON.parse(asUserInfo).id : asUserInfo.id;
+        if (!asUid) {
+            window.aiStudio.oldVersion = false;
+        }
+        if (asUserInfo.id) {
+            window.aiStudio.userInfo.agentAppUser = 1;
+        }
+        const storageOldVersion = localStorage.getItem('as_old_version');
+        if (!asUid && storageOldVersion !== null) {
+            window.aiStudio.oldVersion = !!localStorage.getItem('as_old_version');
+        }
+        localStorage.setItem('as_old_version', window.aiStudio.oldVersion ? '1' : '');
+
+        if (localStorage.getItem('as_new_version_open')) {
+            window.aiStudio.newVersionDisabled = false;
+        }
+    }
+    catch (e) {}
+</script>
+    <script>
+        /* eslint-disable */
+        var _hmt = _hmt || [];
+        _hmt.push(['_setUserProperty', {'user_reg_date': null}]);
+        _hmt.push(["_setUserProperty", {'user_course_rt': null}]);
+        // _hmt.push(["_setUserProperty", {'user_course_total': null}]);
+        _hmt.push(["_setUserProperty", {'user_center_type': null}]);
+        if (asUid) {
+            _hmt.push(['_setUserId', asUid]);
+            _hmt.push([
+                "_setPageviewProperty",
+                {
+                    "user_id": asUid,
+                    "origin": document.referrer
+                }
+            ]);
+        }
+        /* eslint-enable */
+    </script>
+<script>
+    if(window.aiStudio.oldVersion) {
+        document.body.setAttribute('data-old', 1);
+    }
+</script>
+    <script>
+        ((w) => {
+            //【PC库】一级路由
+            var l = [
+                'community',
+                'membership',
+                'intro',
+                'anniversary',
+                'tool',
+                'blog',
+                'project',
+                'app',
+                'pipeline',
+                'practical',
+                'appCourse',
+                'learn',
+                'ai-learning',
+                'aistudio-agent',
+                'certification',
+                'deploy'
+            ];
+
+            // 需要完整匹配的url
+            var complete = [];
+
+            // 匹配到二级路由
+            var secondPath = [
+                '/paddlex/commercialization'
+            ];
+
+            var notLoadNewScripts = [
+                '/project/graphical',
+            ]
+
+            function checkPathMatched (path) {
+                const pathReg = new RegExp('^' + path);
+                return (
+                    !!path
+                    && pathReg.test(location.pathname)
+                    && [undefined, '/'].includes(location.pathname.replace(pathReg, '')[0])
+                );
+            };
+            
+            window.checkIsPCLink = function (path) {
+                var pathnameArr = location.pathname.split('/');
+                var currentModule = (path || location.pathname).replace('/aistudio/', '/').split('/')[1];
+                var currentCompleteUrl = (path || location.pathname).replace('/aistudio/', '/');
+                var currentSecondPath = pathnameArr[2] ? ('/' + pathnameArr[1] + '/' + pathnameArr[2]) : '';
+
+                // 一级路由和PC库一级路由冲突，不需要走新脚本的 url
+                if (notLoadNewScripts.some(function (url) { return location.pathname.includes(url) })) {
+                    return false;
+                }
+
+                // 完整匹配
+                if (complete.some(function (item) { return checkPathMatched(item) })) {
+                    return true;
+                }
+
+                // 只需要匹配到二级路由
+                if (secondPath.some(function (item) { return item === currentSecondPath })) {
+                    return true;
+                }
+
+                return l.includes(currentModule);
+            };
+            
+            var scripts = [
+                window.aiStudio.publicPath + '/aistudio/dist/' + window.aiStudio.feVersionOld + '/js/vendor.js',
+                window.aiStudio.publicPath + '/aistudio/dist/' + window.aiStudio.feVersionOld + '/js/main.js'
+            ];
+
+            var scriptsNew = [
+                window.aiStudio.publicPath + '/aistudio/dist/' + window.aiStudio.feVersion + '/base/vendor.js',
+                window.aiStudio.publicPath + '/aistudio/dist/' + window.aiStudio.feVersion + '/base/main.js'
+            ];
+
+            function loadScripts(scripts) {
+                var script = scripts.shift();
+                var el = document.createElement('script');
+                document.body.append(el);
+                el.onload = function(script) {
+                    if (scripts.length) {
+                        loadScripts(scripts);
+                    }
+                };
+                el.src = script;
+            }
+
+            var loadMainStyle = function() {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = window.aiStudio.publicPath + "/aistudio/dist/"+ window.aiStudio.feVersionOld + "/css/main.css";
+                document.head.append(link);
+            };
+
+            if (window.checkIsPCLink()) {
+                loadScripts(scriptsNew);
+                return;
+            }
+            loadMainStyle();
+            loadScripts(scripts);
+        })(window)
+    </script>
+</body>
+</html>
