@@ -39,8 +39,9 @@ for i in range(3):
 使用本地的Randeng-Pegasus模型和分词器"""),
     
     nbf.v4.new_code_cell("""# 初始化分词器和模型
-model_name = "IDEA-CCNL/Randeng-Pegasus-523M-Summary-Chinese-V1"
-tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+# 使用BERT中文分词器进行测试
+model_name = "bert-base-chinese"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 # 创建数据集实例
 dataset = LCSTSDataset(

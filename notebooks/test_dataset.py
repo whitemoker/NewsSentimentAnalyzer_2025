@@ -14,7 +14,8 @@ for i in range(3):
     print(f'Content: {data[i]["content"]}')
 
 # Test tokenizer and dataset class
-model_name = 'IDEA-CCNL/Randeng-Pegasus-523M-Summary-Chinese-V1'
+# 使用BERT中文分词器进行测试
+model_name = "bert-base-chinese"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 dataset = LCSTSDataset(data_path, tokenizer)
 sample = dataset[0]
